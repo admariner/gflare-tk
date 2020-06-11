@@ -12,8 +12,8 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./build_binary.py bdist_exe
-          name: linux_build
+          command: ./manage.py test
+          name: Test
 
 workflows:
   main:
